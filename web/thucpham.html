@@ -1,0 +1,694 @@
+﻿<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thực phẩm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <script src="js/jquery.min.js"></script>
+    <!--start-smoth-scrolling-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!--start-smoth-scrolling-->
+    <!--requried-jsfiles-for-owl-->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+ 
+    <script src="js/owl.carousel.js"></script>
+    <!---//requried-jsfiles-for-owl-->
+    <!--script-->
+    <script src="js/modernizr.custom.97074.js"></script>
+    <script src="js/jquery.chocolat.js"></script>
+    <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+    <!--light-box-files-->
+</head>
+<body>
+    <!--header-starts-->
+    <div class="header" id="home">
+        <div class="container">
+            <div class="header-top">
+                <div class="col-md-6 header-left">
+                    <ul>
+                        <li><p>Đường dây nóng: <span style="color: #ff9900">0934517691</span></p></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 header-right">
+                    <ul>
+                        <li><a href="#"><span class="fb"> </span></a></li>
+                        <li><a href="#"><span class="twit"> </span></a></li>
+                        <li><a href="#"><span class="pin"> </span></a></li>
+                        <li><a href="#"><span class="rss"> </span></a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--header-end-->
+  
+    <div class="banner">
+        <div class="container">
+                <div class="col-sm-3">
+                    <div class="logo">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+                            <h1>Health <span>Food</span></h1>
+                        </a>
+                    </div>
+
+                    <div class="navigation">
+                        <span class="menu"></span>
+                        <ul class="navig cl-effect-16">
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>Trang Chủ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Giới Thiệu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="nutrients.html">
+                                    <span class="glyphicon glyphicon glyphicon-tint" aria-hidden="true"></span>Chất Dinh Dưỡng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="thucpham.html" class="active">
+                                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>Thực phẩm
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>Thưc Đơn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Liên Hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-9">
+                    <!--search-->
+                     <div class="panel panel-default panel-heading row col-sm-6 col-sm-offset-6" id="search">
+                        <div class="col-sm-6">
+                            <select class="form-control">
+                                  <option>Chọn các loại thực phẩm</option>
+                                  <option>Thực phẩm giàu protein</option>
+                                  <option>Thực phẩm giàu tinh bột</option>
+                                  <option>Thực phẩm giàu chất xơ</option>
+                                  <option>Thực phẩm giàu đạm</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <form id="data_search" method="get" action="search">
+                                <input class="form-control" placeholder="Tìm kiếm" name="tenthucpham">
+                            </form>
+                        </div> 
+                    </div>
+                    <!--search end-->
+
+                   
+                    <!--tom tat thong tin thuc pham-->
+                   
+                    <div class="panel panel-default">
+                         
+                        <div class="row" id="info">
+                          
+                        </div>
+                    </div>
+                   <!--ket thuc tom tat-->
+
+                   <!--cac thuc pham-->
+                    <div class="text-center" id="hinhanhthucpham">
+                        <div class="row">
+                            <!--list thực phẩm-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3>Thức ăn giàu protein</h3>
+                                </div>
+                                <div class="panel-body"  id="giauprotein">
+                                    <br>
+                                    <div class="row">
+                                            <div class="col-sm-2 hovergallery" id="thitbo" onclick="thaydoithongtin(this)">
+
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/thitbo.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Thịt bò</em>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="thitlon" onclick="thaydoithongtin(this)">
+                                                
+                                                
+                                                <div class="panel panel-primary panel-footer">
+                                                   <a href="#info">
+                                                        <img src="image/thitlon.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Thịt lợn</em>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="thitga" onclick="thaydoithongtin(this)">
+                                                
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/thitga.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Thịt gà</em>
+                                                    </a>
+                                                
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="thitvit" onclick="thaydoithongtin(this)">
+                                                
+                                                
+                                                <div class="panel panel-primary panel-footer">
+                                                   <a href="#info">
+                                                        <img src="image/thitvit.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Thịt vịt</em>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="thitngan" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/thitngan.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Thịt ngan</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="thitngong" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/thitngong.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Thịt ngỗng</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <hr>  
+                                </div>
+                            </div>
+
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    <h3>Thức ăn giàu chất xơ</h3>
+                                </div>
+                                <div class="panel-body"  id="giauchatxo">
+                                    <div class="row">
+                                            <div class="col-sm-2 hovergallery" id="raucai" onclick="thaydoithongtin(this)">
+
+                                
+                               
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/raucai.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Rau cải</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="suhao" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                   <a href="#info">
+                                                        <img src="image/suhao.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Su hào</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="cachua" onclick="thaydoithongtin(this)">
+                                                
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/cachua.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Cà chua</em>
+                                                    </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="carot" onclick="thaydoithongtin(this)">   
+                                                <div class="panel panel-primary panel-footer">
+                                                   <a href="#info">
+                                                        <img src="image/carot.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Cà rốt</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="hanhcu" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/hanhcu.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Hành củ</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="khoaitay" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/khoaitay.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Khoai tây</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                            <div class="col-sm-2 hovergallery" id="raucai" onclick="thaydoithongtin(this)">
+
+                                
+                               
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/raucai.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Rau cải</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="suhao" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                   <a href="#info">
+                                                        <img src="image/suhao.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Su hào</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="cachua" onclick="thaydoithongtin(this)">
+                                                
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/cachua.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Cà chua</em>
+                                                    </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="carot" onclick="thaydoithongtin(this)">   
+                                                <div class="panel panel-primary panel-footer">
+                                                   <a href="#info">
+                                                        <img src="image/carot.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Cà rốt</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="hanhcu" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/hanhcu.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Hành củ</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="khoaitay" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/khoaitay.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Khoai tây</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                     <h3>Thức ăn giàu đạm</h3>
+                                </div>
+                                <div class="panel-body"  id="giaudam">
+                                    <div class="row">
+                                        <div class="col-sm-2 hovergallery" id="cachep" onclick="thaydoithongtin(this)">
+
+                                            
+                                           
+                                            <div class="panel panel-primary panel-footer">
+                                                <a href="#info">
+                                                    <img src="image/cachep.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Cá chép</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 hovergallery" id="cathu" onclick="thaydoithongtin(this)"> 
+                                            <div class="panel panel-primary panel-footer">
+                                               <a href="#info">
+                                                    <img src="image/cathu.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Cá thu</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 hovergallery" id="cangu" onclick="thaydoithongtin(this)">
+                                            
+                                            <div class="panel panel-primary panel-footer">
+                                                <a href="#info">
+                                                    <img src="image/cangu.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Cá ngừ</em>
+                                                </a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 hovergallery" id="trai" onclick="thaydoithongtin(this)">
+                                            <div class="panel panel-primary panel-footer">
+                                               <a href="#info">
+                                                    <img src="image/trai.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Trai</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 hovergallery" id="thitngan" onclick="thaydoithongtin(this)">
+                                          
+                                         
+                                            <div class="panel panel-primary panel-footer">
+                                                <a href="#info">
+                                                    <img src="image/thitngan.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Thịt ngan</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 hovergallery" id="thitngong" onclick="thaydoithongtin(this)">
+                                            <div class="panel panel-primary panel-footer">
+                                                <a href="#info">
+                                                    <img src="image/thitngong.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Thịt ngỗng</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                            <div class="col-sm-2 hovergallery" id="raucai" onclick="thaydoithongtin(this)">
+
+                                
+                               
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/raucai.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Rau cải</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="suhao" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                   <a href="#info">
+                                                        <img src="image/suhao.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Su hào</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="cachua" onclick="thaydoithongtin(this)">
+                                                
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/cachua.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Cà chua</em>
+                                                    </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="carot" onclick="thaydoithongtin(this)">   
+                                                <div class="panel panel-primary panel-footer">
+                                                   <a href="#info">
+                                                        <img src="image/carot.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Cà rốt</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="hanhcu" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/hanhcu.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Hành củ</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="khoaitay" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/khoaitay.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Khoai tây</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-warning">
+                                <div class="panel-heading">
+                                     <h3>Thức ăn giàu tinh bột</h3>
+                                </div>
+                                <div class="panel-body"  id="giautinhbot">
+                                    <div class="row">
+                                        <div class="col-sm-2 hovergallery" id="cachep" onclick="thaydoithongtin(this)">
+
+                                            
+                                           
+                                            <div class="panel panel-primary panel-footer">
+                                                <a href="#info">
+                                                    <img src="image/cachep.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Cá chép</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 hovergallery" id="cathu" onclick="thaydoithongtin(this)">
+                                            
+                                            
+                                            <div class="panel panel-primary panel-footer">
+                                               <a href="#info">
+                                                    <img src="image/cathu.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Cá thu</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 hovergallery" id="cangu" onclick="thaydoithongtin(this)">
+                                            
+                                            <div class="panel panel-primary panel-footer">
+                                                <a href="#info">
+                                                    <img src="image/cangu.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Cá ngừ</em>
+                                                </a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 hovergallery" id="trai" onclick="thaydoithongtin(this)">
+                                            
+                                            
+                                            <div class="panel panel-primary panel-footer">
+                                               <a href="#info">
+                                                    <img src="image/trai.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Trai</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 hovergallery" id="thitngan" onclick="thaydoithongtin(this)">
+                                          
+                                         
+                                            <div class="panel panel-primary panel-footer">
+                                                <a href="#info">
+                                                    <img src="image/thitngan.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Thịt ngan</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2 hovergallery" id="thitngong" onclick="thaydoithongtin(this)">
+                                            <div class="panel panel-primary panel-footer">
+                                                <a href="#info">
+                                                    <img src="image/thitngong.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                    <em>Thịt ngỗng</em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                            <div class="col-sm-2 hovergallery" id="raucai" onclick="thaydoithongtin(this)">
+
+                                
+                               
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/raucai.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Rau cải</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="suhao" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                   <a href="#info">
+                                                        <img src="image/suhao.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Su hào</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="cachua" onclick="thaydoithongtin(this)">
+                                                
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/cachua.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em> Cà chua</em>
+                                                    </a>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="carot" onclick="thaydoithongtin(this)">   
+                                                <div class="panel panel-primary panel-footer">
+                                                   <a href="#info">
+                                                        <img src="image/carot.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Cà rốt</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="hanhcu" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/hanhcu.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Hành củ</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2 hovergallery" id="khoaitay" onclick="thaydoithongtin(this)">
+                                                <div class="panel panel-primary panel-footer">
+                                                    <a href="#info">
+                                                        <img src="image/khoaitay.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                                        <em>Khoai tây</em>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="tinlienquan"><strong>Những tin liên quan</strong></h4>
+                            <div class="text-left panel panel-default panel-heading">
+
+                                <ul>
+                                    <li class="lienket" ><a href=#><i>Những món ăn ngon được chế biến từ thịt bò</i></a></li>
+                                    <li class="lienket" ><a href=#><i>Thịt bò và số phận của những con bò</i></a></li>
+                                    <li class="lienket" ><a href=#><i>Cách chế biến thịt bò dành cho người muốn tăng cân</i></a></li>
+                                    <li class="lienket" ><a href=#><i>Thịt bò nấu với..........</i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+        </div>      
+    </div>   
+    <hr>
+       
+     <div class="clearfix"></div>
+  
+    <div class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="col-md-3 footer-left">
+                    <h4>Danh Mục</h4>
+                    <ul>
+                        <li><a href="#"><span>> </span>Trang Chủ</a></li>
+                        <li><a href="#"><span>> </span>Giới Thiệu</a></li>
+                        <li><a href="#"><span>> </span>Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-left">
+                    <h4>Liện Hệ Mới</h4>
+                    <div class="letter">
+                        <form>
+                            <input type="text" placeholder="Nhập Email Của Bạn">
+                            <input type="submit" value="Kết Nối">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-left">
+                    <h4>Sức Khỏe</h4>
+                    <ul>
+                        <li><a href="#"><span>> </span>Chất Dinh Dương</a></li>
+                        <li><a href="#"><span>> </span>Thức Ăn</a></li>
+                        <li><a href="#"><span>> </span>Thực Đơn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-left">
+                    <h4>Bạn Bè</h4>
+                    <div class="flickr">
+                        <div class="f-one">
+                            <div class="f-left">
+                                <a href="#"><img src="images/f1.jpg" alt="" /></a>
+                            </div>
+                            <div class="f-left">
+                                <a href="#"><img src="images/f2.jpg" alt="" /></a>
+                            </div>
+                            <div class="f-left">
+                                <a href="#"><img src="images/f3.jpg" alt="" /></a>
+                            </div>
+                            <div class="f-left">
+                                <a href="#"><img src="images/f4.jpg" alt="" /></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="f-one">
+                            <div class="f-left">
+                                <a href="#"><img src="images/f5.jpg" alt="" /></a>
+                            </div>
+                            <div class="f-left">
+                                <a href="#"><img src="images/f6.jpg" alt="" /></a>
+                            </div>
+                            <div class="f-left">
+                                <a href="#"><img src="images/f7.jpg" alt="" /></a>
+                            </div>
+                            <div class="f-left">
+                                <a href="#"><img src="images/f8.jpg" alt="" /></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="footer-bottom">
+                <p>  <a href="#" target="_blank">&copy</a> </p>
+            </div>
+        </div>
+</div>
+<script type="text/javascript">
+      function thaydoithongtin(info)
+      {
+          var idanh = info.id;
+          var data = { id: idanh };
+          $.post('thucpham', data, function (dt) {
+              document.getElementById("info").innerHTML = dt;
+          },'text');
+        $("#info").css("border-left"," #99ffff solid 2px");
+        $("#info").css("border-right"," #99ffff solid 2px");
+        $("#info").css("border-bottom"," #99ffff solid 2px");
+      }
+      $('#search').keypress(function(event){
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if (keycode == '13') {
+               
+            }
+        });
+      
+
+</script>
+<script type="text/javascript">
+    $('#btn-detail').click(function () {
+        $("#myModal").modal();
+    });
+</script>
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
